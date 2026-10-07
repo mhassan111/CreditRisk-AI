@@ -1,0 +1,28 @@
+[project]
+name = "credit-risk-ai"
+version = "0.1.0"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "tensorflow>=2.15,<2.17",
+    "pillow",
+    "numpy",
+    "scikit-learn",
+    "coremltools",
+    "pandas>=2.3.3",
+    "matplotlib>=3.10.9",
+    "seaborn>=0.13.2",
+    "ipykernel>=7.3.0",
+    "xgboost>=3.2.0",
+    "pip>=26.2.1",
+    "fastapi>=0.142.2",
+    "uvicorn[standard]>=0.54.0",
+    "pydantic>=2.13.5",
+    "app>=0.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
